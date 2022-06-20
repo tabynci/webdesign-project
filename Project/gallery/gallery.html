@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>https://www.t&s.com/Gallery</title>
+		<meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="../style/style.css"/>
+	</head>
+	<body>
+		<div id="header">
+			<div id="header1"><img src="../image/Logo.jpeg" width="200" height="100"></div>
+			<div id="header2">
+				<div class="link"><a href="../index.html">Home</a></div>
+				<div class="link"><a href="gallery.html">Gallery</a></div>
+				<div class="link"><a href="../contact/contact.html">Contact</a></div>
+				<div class="link"><a href="../login/login.html">Login</a></div>
+				<div class="link"><a href="../cart/cart.html">Cart</a></div>
+			</div>
+		</div>
+		<div id="main2">
+			<div id="sidebar">
+				<img src="../image/veggies.jpeg" alt="sidebar" width="300" height="300">
+			</div>
+			<div id="content">
+				<h1>About us</h1>
+				<p>T&S is a grocery store chain with locations throughout Ireland and the rest of the world. Our stores can be found all over the country. Almost every town and village in Ireland has at least one of our stores. 
+				There are approximately 100 stores in Ireland, with 6,000 worldwide. Tabasum and Swaroopa began selling goods from a modest Irish booth in 2000, where they were residing. The first appearance of the T&S brand was in 2001.</p>
+                   <p>When it was recommended that both of these females have their own names as their uniformity, the term 'T&S' was born.
+                   They designed labels with the first letters of their names, T and S, on them. When you combine the letters T and S, you get the word T&S. </p>
+				  <p> The company is primarily a food retailer, however it also sell non-food items on occasion. In the 2000s, they frequently sold solely fresh, in-demand foods. We have a solid reputation for being inexpensive. It was able to do so, since the suppliers offered them at a low cost.
+				   </p>			
+			</div>
+			</div>
+   
+     
+         <div class="row">
+  <div class= "column" "col-md-3">
+    <img src="../image/snacks.jpeg" alt="Snacks" onclick="myFunction(this);">
+  </div>
+  <div class= "column" "col-sm-3">
+    <img src="../image/dairy.jpeg" alt="Dairy" onclick="myFunction(this);">
+  </div>
+  <div class="column""col-sm-3">
+    <img src="../image/flowers.jpeg" alt="Flowers" onclick="myFunction(this);">
+  </div>
+  <div class="column" "col-sm-3">
+    <img src="../image/vegetables.jpeg" alt="Vegetables" onclick="myFunction(this);">
+  </div>
+  <div class="column" "col-sm-3">
+    <img src="../image/fruits.jpeg" alt="Fruits" onclick="myFunction(this);">
+  </div>
+  <div class="column""col-md-3">
+    <img src="../image/meat.jpeg" alt="Meat" onclick="myFunction(this);">
+	
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+	
+		<div class="footerContent">
+   
+    
+    <footer class="footer">
+        
+        <hr>
+        <div class="footerLists">
+            <p style="font-family: 'Times New Roman', Times, serif; font-weight:bold,">Useful links</p>
+            <ul>
+                <li><a href="../image/snacks.jpeg">www.Snack.com</a></li>
+                <li><a href="../image/dairy.jpeg">www.dairy.com</a></li>
+                <li><a href="../image/flowers.jpeg">www.flowers.com</a></li>
+                <li><a href="../image/vegetables.jpeg">www.Vegetables.com</a></li>
+                <li><a href="../image/fruits.jpeg">www.fruits.com</a></li>
+                <li><a href="../image/meat.jpeg">www.meat.com</a></li>
+            </ul></div>
+        
+            <p class="nci" style=text-align:center>&copy; NCI 2022</p>
+        </div>
+    </footer>
+</div>
+	<script >
+	function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>	
+	</body>
+</html>
